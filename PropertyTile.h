@@ -1,7 +1,17 @@
+// PropertyTile.h
+// Curtis Teng
+// 4/14/2025
+
 #pragma once
 #include "Tile.h"
 #include "Player.h"
 
+
+/*
+  PropertyTile class represents a property tile on the Monopoly board.
+  It inherits from the Tile class and implements the landedOn method.
+  The player can buy the property or pay rent if it is owned by another player.
+*/
 class PropertyTile : public Tile {
 private:
 	int price;

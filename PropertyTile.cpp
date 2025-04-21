@@ -1,6 +1,12 @@
+// PropertyTile.cpp
+// Curtis Teng
+// 4/14/2025
+
 #include "PropertyTile.h"
 #include <iostream>
 
+
+// Function to handle when a player lands on a property tile
 void PropertyTile::landedOn(Player& player) {
 	std::cout << player.getName() << " landed on " << name << ".\n";
 

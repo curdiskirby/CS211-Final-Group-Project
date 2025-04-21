@@ -1,6 +1,11 @@
+// Player.h
+// Curtis Teng & Benjamin Sanchez
+// 4/14/2025
+
 #pragma once
 #include <string>
 
+/// Player class represents a player in the Monopoly game
 class Player {
 private:
 	std::string name;
@@ -19,4 +24,6 @@ public:
 	int getMoney() const;
 	void addMoney(int amount);
 	void subtractMoney(int amount);
+	void adjustMoney(int amount);
+	void setMoney(int money);
 };
